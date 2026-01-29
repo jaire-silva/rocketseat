@@ -1,16 +1,10 @@
 import {Component} from '@angular/core';
-import {MeuBotao} from './meu-botao/meu-botao';
-import {BotaoFlat} from './botao-flat/botao-flat';
-import {EventBinding} from './event-binding/event-binding';
-import {PropertyBinding} from './property-binding/property-binding';
+import {DinamicText} from './components/style-binding/dinamic-text/dinamic-text';
 
 @Component({
   selector: 'app-root',
   imports: [
-    MeuBotao,
-    BotaoFlat,
-    EventBinding,
-    PropertyBinding
+    DinamicText
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
