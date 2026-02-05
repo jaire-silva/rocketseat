@@ -1,3 +1,7 @@
+:host{
+  --shadow-color: blue;
+}
+
 p {
-  color: red;
+  color: var(--secondary-color);
 }

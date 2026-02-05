@@ -1,3 +1,7 @@
+p{
+  color: var(--shadow-color);
+}
+
 :host {
   display: block;
   border: 1px solid #ddd;
