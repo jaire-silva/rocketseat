@@ -1,3 +1,55 @@
-p{
-  font-family: cursive;
+:host {
+  display: block;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 0;
+  width: 300px;
+  float: left;
+}
+
+:host(:hover) {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* --- Variações do host com base em atributos --- */
+
+/* Quando o host tem o atributo 'tema="primario"' */
+:host([tema="primario"]) {
+  background-color: #007bff;
+}
+
+/* Quando o host tem o atributo 'tema="secundario"' */
+:host([tema="secundario"]) {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Quando o host tem o atributo 'tamanho="grande"' */
+:host([tamanho="grande"]) {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+/* Quando o host tem o atributo 'desabilitado' (booleano) */
+:host([desabilitado]) {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+/* Estiliza o host quando a classe 'ativo' estiver presente */
+:host(.ativo) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  background-color: #e6f3ff;
+}
+
+/* Estiliza o host quando a classe 'ativo' estiver presente */
+:host-context(.tema-escuro) {
+  border: 1px solid #555;
+  color: white;
+  background-color: #333;
 }
