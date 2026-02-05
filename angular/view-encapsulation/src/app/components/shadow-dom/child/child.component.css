@@ -47,7 +47,7 @@
   background-color: #e6f3ff;
 }
 
-/* Estiliza o host quando a classe 'ativo' estiver presente */
+/* Estiliza o host E o conteúdo interno se um pai ter a classe 'tema-escudo' */
 :host-context(.tema-escuro) {
   border: 1px solid #555;
   color: white;
